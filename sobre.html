@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Descobra saber-mais as 4 principais étnias de Angola com a AngoCultura">
+    <meta name="keywords" content="Angola, AngoCultura , cultura, etinia">
+    <link rel="shortcut icon" href="./public/favicon/icone.ico" type="image/x-icon">
+    <link rel="manifest" href="./public/config/manifest.json">
+    <link rel="stylesheet" href="./public/css/sobre.css">
+    <link rel="stylesheet" href="./public/css/responsivo_3.css">
+    <title>AngoCultura</title>
+</head>
+
+<body>
+    <nav>
+        <div class="icone">
+            <a href="./index.html"> <img src="./public/img/icon/voltar.png" alt="icone do site de AngoCultura"></a>
+        </div>
+    </nav>
+    <main>
+        <section class="integrantes">
+            <h1>Integrantes do Grupo Nº 6</h1>
+        </section>
+        <section class="info">
+
+            <div class="membro" onmouseenter="carregar_barra(`6`,95)" onmouseleave="descarregar_barra(`6`)">
+                <div class="img">
+                    <img src="./public/img/icon/ipnk.jpg" alt="membro do grupo">
+                </div>
+                <div class="dados">
+                    <p>Nome: <span>Nsimba Ndombaxi</span></p>
+                    <p>classe: <span>12ª</span></p>
+                    <p>Sala nº: <span>12</span></p>
+                    <p>Nº: <span>26</span></p>
+                </div>
+                <div class="estatistica">
+                    <h2>Participação: 96%</h2>
+                    <div class="percentagem">
+                        <div class="barra" id="6"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="membro" onmouseover="carregar_barra(`1`,75)" onmouseleave="descarregar_barra(`1`)">
+                <div class="img">
+                    <img src="./public/img/devs/mayiza.jpg" alt="membro do grupo">
+                </div>
+                <div class="dados">
+                    <p>Nome: <span>Mayiza Lutonda</span></p>
+                    <p>classe: <span>12ª</span></p>
+                    <p>Sala nº: <span>12</span></p>
+                    <p>Nº: <span>22</span></p>
+                </div>
+                <div class="estatistica">
+                    <h2>Participação: 76%</h2>
+                    <div class="percentagem">
+                        <div class="barra" id="1"></div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="membro" onmouseover="carregar_barra(`2`,75)" onmouseleave="descarregar_barra(`2`)">
+                <div class="img">
+                    <img src="./public/img/devs/jaime.jpg" alt="membro do grupo">
+                </div>
+                <div class="dados">
+                    <p>Nome: <span>Jaime Nsadisua</span></p>
+                    <p>classe: <span>12ª</span></p>
+                    <p>Sala nº: <span>12</span></p>
+                    <p>Nº: <span>15</span></p>
+                </div>
+                <div class="estatistica">
+                    <h2>Participação: 75%</h2>
+                    <div class="percentagem">
+                        <div class="barra" id="2"></div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="membro" onmouseover="carregar_barra(`3`,71)" onmouseleave="descarregar_barra(`3`)">
+                <div class="img">
+                    <img src="./public/img/devs/sbrogo.jpg" alt="membro do grupo">
+                </div>
+                <div class="dados">
+                    <p>Nome: <span>Paulo Bento</span></p>
+                    <p>classe: <span>12ª</span></p>
+                    <p>Sala nº: <span>12</span></p>
+                    <p>Nº: <span>28</span></p>
+                </div>
+                <div class="estatistica">
+                    <h2>Participação: 72%</h2>
+                    <div class="percentagem">
+                        <div class="barra" id="3"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="membro" onmouseover="carregar_barra(`4`,35)" onmouseleave="descarregar_barra(`4`)">
+                <div class="img">
+                    <img src="./public/img/devs/antonio.jpg" alt="membro do grupo">
+                </div>
+                <div class="dados">
+                    <p>Nome: <span>Paulo António</span></p>
+                    <p>classe: <span>12ª</span></p>
+                    <p>Sala nº: <span>12</span></p>
+                    <p>Nº: <span>29</span></p>
+                </div>
+                <div class="estatistica">
+                    <h2>Participação: 35%</h2>
+                    <div class="percentagem">
+                        <div class="barra" id="4"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="membro" onmouseover="carregar_barra(`5`,64)" onmouseleave="descarregar_barra(`5`)">
+                <div class="img">
+                    <img src="./public/img/devs/patricio.jpg" alt="membro do grupo">
+                </div>
+                <div class="dados">
+                    <p>Nome: <span>Patrício Quissanga</span></p>
+                    <p>classe: <span>12ª</span></p>
+                    <p>Sala nº: <span>12</span></p>
+                    <p>Nº: <span>27</span></p>
+                </div>
+                <div class="estatistica">
+                    <h2>Participação: 65%</h2>
+                    <div class="percentagem">
+                        <div class="barra" id="5"></div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="tecno">
+            <h1>Linguagens e Tecnologias</h1>
+            <select id="tipo_grafico">
+                <option value="">Escolher Grafico</option>
+                <option value="bar">Barra</option>
+                <option value="pie">Pizza</option>
+                <option value="doughnut">Doughnut</option>
+                <option value="line">Linha</option>
+                <option value="radar">Radar</option>
+            </select>
+            <div class="construir-grafico">
+                <canvas id="grafico"></canvas>
+            </div>
+        </section>
+
+        <section class="baixar-pdf">
+            <h2>Baixar o documento do Projecto</h2>
+            <a href="./public/document/AngoCultura.pdf" download="AngoCultura" target="_blank"><button>Baixar pdf</button></a>
+        </section>
+
+    </main>
+    <script src="./public/js/lib/chart.js"></script>
+    <script src="./public/js/sobre.js"></script>
+</body>
+
+</html>

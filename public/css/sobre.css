@@ -1,0 +1,259 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: 1s;
+    -webkit-tap-highlight-color: transparent;
+    font-family: "PasseoOne";
+}
+
+@font-face {
+    font-family: "PasseoOne";
+    src: url(../font/PasseroOne-Regular.ttf);
+}
+
+:root {
+    /*light mode*/
+    --fundo-principal: #f2f2f2;
+    --fundo-card: #f2e7ae;
+    --destacar: #f29f05;
+    --texto: #1e1e1e;
+    --texto-secundario: #f2e7ae;
+}
+
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/fundo-5.jpg) center/cover no-repeat;
+
+}
+
+nav {
+    height: 60px;
+    z-index: 100;
+    position: sticky;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: var(--destacar);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    border-radius: 0 0 20px 20px;
+}
+
+
+.icone {
+    position: absolute;
+    left: 10%;
+}
+
+.icone img {
+    width: 45px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 100%;
+    transition: 0.3s ease-in;
+}
+
+.icone img:hover {
+    scale: 1.04;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    border-radius: 0 0 20px 20px;
+}
+
+.integrantes {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.integrantes h1 {
+    color: var(--destacar);
+    font-size: 60px;
+}
+
+.info {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 10px;
+    flex-wrap: wrap;
+}
+
+.membro {
+    width: 360px;
+    height: 480px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border: 4px solid var(--texto-secundario);
+    cursor: pointer;
+    margin-bottom: 100px;
+    overflow: hidden;
+}
+
+.membro:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px var(--destacar);
+}
+
+.membro:hover .estatistica {
+    display: flex;
+}
+
+.img {
+    width: 100%;
+}
+
+.img img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 20px;
+    border: 4px solid var(--destacar);
+}
+
+.dados {
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+    padding: 5px;
+}
+
+
+.dados p {
+    color: var(--texto-secundario);
+    font-size: 30px;
+}
+
+.dados span {
+    color: var(--destacar);
+}
+
+.estatistica {
+    display: none;
+    justify-content: start;
+    align-items: end;
+    width: 100%;
+    flex-direction: column;
+}
+
+.estatistica h2 {
+    color: var(--destacar);
+    text-decoration: none;
+}
+
+.percentagem {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    height: 15px;
+    width: 100%;
+    border: 2px solid var(--destacar);
+    border-radius: 20px;
+}
+
+.barra {
+    height: 13px;
+    width: 0%;
+    background-image: linear-gradient(45deg, var(--fundo-card), var(--destacar));
+    border-radius: 20px;
+}
+
+.tecno {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.tecno h1 {
+    color: var(--destacar);
+    font-size: 60px;
+    margin: 10px;
+}
+
+.tecno select {
+    cursor: pointer;
+    width: 40%;
+    font-size: 18px;
+    padding: 5px;
+    margin-bottom: 3px;
+    color: var(--destacar);
+    border-radius: 20px;
+    border: none;
+    outline: none;
+}
+
+
+.construir-grafico {
+    width: 100%;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: whitesmoke;
+    border-radius: 20px;
+}
+
+.construir-grafico canvas {
+    cursor: pointer;
+}
+
+.baixar-pdf{
+    width:40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap:20px;
+    height:200px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border: 5px dashed var(--destacar);
+    border-radius: 20px;
+}
+
+.baixar-pdf h2{
+    color: var(--destacar);
+}
+
+.baixar-pdf button{
+    cursor: pointer;
+    padding:15px 30px;
+    border-radius: 20px;
+    font-size:18px;
+    color: var(--destacar);
+    border: 2px solid var(--destacar);
+    background-color:var(--fundo-card);
+}
+
+.baixar-pdf button:hover{
+    color: var(--fundo-card);
+    border: 2px solid var(--fundo-card);
+    background-color:var(--destacar);
+}
