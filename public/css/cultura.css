@@ -331,3 +331,29 @@ section {
     object-fit: cover;
     object-position: top;
 }
+
+.arte {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+.arte .conteudo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    margin: 20px;
+}
+
+
+.arte .conteudo p {
+    color: var(--fundo-card);
+    font-size: 1.2em;
+    text-indent: 20px;
+    text-align: justify;
+}
