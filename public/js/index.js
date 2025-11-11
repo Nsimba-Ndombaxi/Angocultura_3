@@ -47,10 +47,15 @@ btn_pesquisar.addEventListener("click", () => {
     console.clear()
     grupos.forEach(grupo => {
         var cards = grupo.querySelectorAll(".card")
-        if (!(window.innerWidth <= "600")) {
+        if (!(window.innerWidth <= "700")) {
             grupo.style.animation = "none"
             grupo.style.paddingLeft = "3em"
         }
+
+        cards.forEach(card => {
+            card.style.display = "flex"
+        })
+
         cards.forEach(card => {
             console.log(`id ${card.id}`)
             var cultura = pesquisa.value.toLowerCase().trim()
@@ -67,10 +72,15 @@ document.addEventListener("keydown", (evento) => {
         console.clear()
         grupos.forEach(grupo => {
             var cards = grupo.querySelectorAll(".card")
-            if (!(window.innerWidth <= "600")) {
+            if (!(window.innerWidth <= "700")) {
                 grupo.style.animation = "none"
                 grupo.style.paddingLeft = "3em"
             }
+
+            cards.forEach(card => {
+                card.style.display = "flex"
+            })
+            
             cards.forEach(card => {
                 console.log(`id ${card.id}`)
                 var cultura = pesquisa.value.toLowerCase().trim()
@@ -89,7 +99,7 @@ pesquisa.addEventListener("change", () => {
         console.log(" o input mudou")
         grupos.forEach(grupo => {
             console.log(window.innerWidth)
-            if ((!(window.innerWidth <= "600"))) {
+            if ((!(window.innerWidth <= "700"))) {
                 grupo.style.animation = "spin 20s infinite linear running"
                 grupo.style.paddingLeft = "0"
             }
@@ -106,7 +116,7 @@ pesquisa.addEventListener("change", () => {
 function animationStop() {
     grupos.forEach(grupo => {
         console.log(window.innerWidth)
-        if (!(window.innerWidth <= "600") & (pesquisa.value.length == 0)) {
+        if (!(window.innerWidth <= "700") & (pesquisa.value.length == 0)) {
             grupo.style.animation = "spin 20s infinite linear paused"
             grupo.style.paddingLeft = "0"
         }
@@ -116,7 +126,7 @@ function animationStop() {
 function animationPlay() {
     grupos.forEach(grupo => {
         console.log(window.innerWidth)
-        if (!(window.innerWidth <= "600") & (pesquisa.value.length == 0)) {
+        if (!(window.innerWidth <= "700") & (pesquisa.value.length == 0)) {
             grupo.style.animation = "spin 20s infinite linear running"
             grupo.style.paddingLeft = "0"
         }

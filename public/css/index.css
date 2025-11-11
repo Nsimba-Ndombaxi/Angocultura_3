@@ -25,6 +25,8 @@
 body {
     min-height: 100vh;
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/fundo-5.jpg) center/cover no-repeat;
+    background-attachment: fixed;
+    background-color: black;
 
 }
 
@@ -46,7 +48,7 @@ nav {
 nav input {
     color: var(--texto);
     width: 300px;
-    padding: 10px 15px;
+    padding: 5px 15px;
     outline: none;
     background-color: var(--fundo-card);
     border-radius: 20px;
@@ -77,7 +79,7 @@ nav img:hover {
 
 
 .icone img {
-    width: 45px;
+    width: 40px;
     object-fit: cover;
     object-position: center;
     border-radius: 100%;

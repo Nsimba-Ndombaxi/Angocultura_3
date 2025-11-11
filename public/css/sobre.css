@@ -25,11 +25,13 @@
 body {
     min-height: 100vh;
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/fundo-5.jpg) center/cover no-repeat;
+    background-attachment: fixed;
+    background-color: black;
 
 }
 
 nav {
-    height: 60px;
+    height: 50px;
     z-index: 100;
     position: sticky;
     top: 0;
@@ -51,7 +53,7 @@ nav {
 }
 
 .icone img {
-    width: 45px;
+    width: 40px;
     object-fit: cover;
     object-position: center;
     border-radius: 100%;
@@ -225,35 +227,35 @@ main {
     cursor: pointer;
 }
 
-.baixar-pdf{
-    width:40%;
+.baixar-pdf {
+    width: 40%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap:20px;
-    height:200px;
+    gap: 20px;
+    height: 200px;
     background-color: rgba(0, 0, 0, 0.6);
     border: 5px dashed var(--destacar);
     border-radius: 20px;
 }
 
-.baixar-pdf h2{
+.baixar-pdf h2 {
     color: var(--destacar);
 }
 
-.baixar-pdf button{
+.baixar-pdf button {
     cursor: pointer;
-    padding:15px 30px;
+    padding: 15px 30px;
     border-radius: 20px;
-    font-size:18px;
+    font-size: 18px;
     color: var(--destacar);
     border: 2px solid var(--destacar);
-    background-color:var(--fundo-card);
+    background-color: var(--fundo-card);
 }
 
-.baixar-pdf button:hover{
+.baixar-pdf button:hover {
     color: var(--fundo-card);
     border: 2px solid var(--fundo-card);
-    background-color:var(--destacar);
+    background-color: var(--destacar);
 }

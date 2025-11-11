@@ -27,11 +27,13 @@
 body {
     min-height: 100vh;
     background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/fundo-5.jpg) center/cover no-repeat;
+    background-attachment: fixed;
+     background-color: black;
 }
 
 nav {
     /*90vh*/
-    height: 8vh;
+    height: 7vh;
     position: sticky;
     top: 0;
     right: 0;
@@ -41,7 +43,7 @@ nav {
     align-items: center;
     flex-direction: row;
     background-color: var(--destacar);
-    padding: 10px;
+    padding: 8px;
     border-radius: 0 0 20px 20px;
     z-index: 100;
 }
@@ -86,7 +88,7 @@ nav>ul>li>a:hover:before {
 }
 
 .icone img {
-    width: 45px;
+    width: 40px;
     object-fit: cover;
     object-position: center;
     border-radius: 100%;
@@ -119,7 +121,6 @@ aside {
     gap: 8px;
     border: 2px solid var(--texto-secundario);
     background-color: rgba(0, 0, 0, 0.8);
-    box-shadow: 0 0 10px var(--destacar);
     overflow: auto;
     scrollbar-color: var(--destacar) transparent;
     cursor: url(../img/cursor_pena.png), auto;
@@ -192,10 +193,9 @@ section {
     scroll-margin-top: 70px;
     width: 98%;
     /*88vh*/
-    min-height: 88vh;
+    min-height: 89vh;
     border: 2px solid var(--texto-secundario);
     background-color: rgba(0, 0, 0, 0.8);
-    box-shadow: 0 0 10px var(--destacar);
     border-radius: 20px;
     padding: 10px;
 }
@@ -212,7 +212,6 @@ section {
     object-fit: cover;
     object-position: top;
     border-radius: 20px;
-    border: 5px solid var(--destacar);
 }
 
 
@@ -270,31 +269,36 @@ section {
 
 .origem .conteudo {
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     flex-direction: column;
     gap: 10px;
-    margin: 20px;
+     margin: 2px;
 }
 
 
 .origem .conteudo p {
-    color: var(--fundo-card);
+    color: var(--texto-secundario);
     font-size: 1.2em;
-    text-indent: 20px;
-    text-align: justify;
+    text-indent: 50px;
+}
+
+.origem .conteudo h2 {
+    padding-top: 20px;
+    text-decoration: underline;
+    color: var(--texto-secundario);
+    text-align: center;
 }
 
 .origem .conteudo img {
 
     margin: 8px 0;
     width: 100%;
-    height: 300px;
-    border-radius: 20px;
-    overflow: hidden;
-    object-fit: cover;
-    object-position: top;
+    height: 500px;
+    object-fit: contain;
+    object-position: center center;
 }
+
 
 .culturas {
     display: flex;
@@ -306,31 +310,48 @@ section {
 
 .culturas .conteudo {
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     flex-direction: column;
     gap: 10px;
-    margin: 20px;
+    margin: 2px;
 }
 
 
 .culturas .conteudo p {
-    color: var(--fundo-card);
+    color: var(--texto-secundario);
     font-size: 1.2em;
-    text-indent: 20px;
-    text-align: justify;
+    text-indent: 50px;
+    width: 100%;
+}
+
+.culturas .conteudo ul {
+    color: var(--texto-secundario);
+    font-size: 1.2em;
+    text-indent: 50px;
+    list-style: none;
+    width: 100%;
+}
+
+.culturas .conteudo h2 {
+    padding-top: 20px;
+    text-decoration: underline;
+    color: var(--texto-secundario);
+    text-align: center;
 }
 
 .culturas .conteudo img {
 
     margin: 8px 0;
     width: 100%;
-    height: 300px;
-    border-radius: 20px;
-    overflow: hidden;
-    object-fit: cover;
-    object-position: top;
+    height: 500px;
+    object-fit: contain;
+    object-position: center center;
 }
+
+
+
+
 
 .arte {
     display: flex;
@@ -340,20 +361,43 @@ section {
     gap: 10px;
 }
 
-
 .arte .conteudo {
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     flex-direction: column;
     gap: 10px;
-    margin: 20px;
+    margin: 2px;
 }
 
 
 .arte .conteudo p {
-    color: var(--fundo-card);
+    color: var(--texto-secundario);
     font-size: 1.2em;
-    text-indent: 20px;
-    text-align: justify;
+    text-indent: 50px;
+    width: 100%;
+}
+
+.arte .conteudo ul {
+    color: var(--texto-secundario);
+    font-size: 1.2em;
+    text-indent: 50px;
+    list-style: none;
+    width: 100%;
+}
+
+.arte .conteudo h2 {
+    padding-top: 20px;
+    text-decoration: underline;
+    color: var(--texto-secundario);
+    text-align: center;
+}
+
+.arte .conteudo img {
+
+    margin: 8px 0;
+    width: 100%;
+    height: 500px;
+    object-fit: contain;
+    object-position: center center;
 }
